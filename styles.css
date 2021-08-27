@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #12181B;
+}
+h1{
+    color: aliceblue;
+}
+.clock-container{
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls{
+    margin: 1rem 3rem;
+}
+#clock{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 9vw;
+    color: aliceblue;
+}
+
+.button{
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: aliceblue;
+    padding: 4px 8px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+label{
+    color: aliceblue;
+}
+
+fieldset{
+    width: 400px;
+}
+
+.alarm{
+    width: 280px;
+}
+
+.form-group{
+    align-items: center;
+    align-items: center;
+}
+
+.alarm-box{
+    width: 100%;
+}
+
+.alarm-input{
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.wrapper{
+    border: solid white 2px;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
