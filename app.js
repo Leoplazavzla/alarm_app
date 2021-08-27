@@ -63,29 +63,7 @@ const currentValues = () =>{
     currMin = currMinToMilSec(time.getMinutes());
     currSec = currSecToMilSec(time.getSeconds());
 };
-//Set Alarm code
-/*const alarmBtn = document.getElementById('setAlarm');
-alarmBtn.addEventListener('click',  () => {
-    alarmValues();
-    currentValues();
-    alarmTotal = alarmHr + alarmMin;
-    currTotal = currHr + currMin + currSec;
-    console.log('The current total time is: ', currTotal)
-    console.log('The alarm total is: ', alarmTotal)
 
-    if(alarmTotal > currTotal){
-        const timeOut = alarmTotal - currTotal;
-        console.log('The time remaining for the alarm is: ', timeOut);
-        alarmTimeOut = setTimeout(() => audio.play(), timeOut);
-    }
-});*/
-//Clear Alarm Code
-/*const clrBtn = document.getElementById('clearAlarm');
-clrBtn.addEventListener('click', () => {
-    audio.pause()
-    let input1 = document.getElementById('alarm-hour').value='';
-    let input2 = document.getElementById('alarm-minute').value='';
-});*/
 setInterval(updateTime, 1000);
 
 // Start of classes code
@@ -185,3 +163,29 @@ document.getElementById('new-alarm').addEventListener('click', (e) => {
     audio.pause();
 });
 
+
+
+
+//Set Alarm code
+/*const alarmBtn = document.getElementById('setAlarm');
+alarmBtn.addEventListener('click',  () => {
+    alarmValues();
+    currentValues();
+    alarmTotal = alarmHr + alarmMin;
+    currTotal = currHr + currMin + currSec;
+    console.log('The current total time is: ', currTotal)
+    console.log('The alarm total is: ', alarmTotal)
+
+    if(alarmTotal > currTotal){
+        const timeOut = alarmTotal - currTotal;
+        console.log('The time remaining for the alarm is: ', timeOut);
+        alarmTimeOut = setTimeout(() => audio.play(), timeOut);
+    }
+});*/
+//Clear Alarm Code
+/*const clrBtn = document.getElementById('clearAlarm');
+clrBtn.addEventListener('click', () => {
+    audio.pause()
+    let input1 = document.getElementById('alarm-hour').value='';
+    let input2 = document.getElementById('alarm-minute').value='';
+});*/

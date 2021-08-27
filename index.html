@@ -47,31 +47,34 @@
 
 <section class="clock-container mb-2">
     <div id="clock" class="clock mt-5"></div>
-    <div class="dateTime">
+</section>
+<section class="alarm-container mb-5">
+<div class="dateTime">
         <div class="wrapper">
         <form id="form" >
             <fieldset>
                 <div>
                     <div class="alarm-box">
-                        <div class='form-group'>
+                        <div class='form-group form-inline'>
                             <h3 style="color: white">Set your alarm</h3>
-                            <label>Hour</label>
-                            <div >
-                                <input id="alarm-hour"
-                                       class="alarm-input"
+<!--                            <label>Hour</label>-->
+                             <div class="alarm-input">
+                                 <span class="">Hour: </span><input id="alarm-hour"
                                        type="text"
+                                       class="input-alarm"
                                        placeholder="Insert hour ... ">
+                            </div>
+<!--                            <label>Minute: </label>-->
+                            <div class="alarm-input">
+                                <span>Minute: </span> <input id="alarm-minute"
+                                       type="text"
+                                       placeholder="Insert minutes ..."
+                                       class="input-alarm">
                             </div>
                         </div>
                     <div class="alarm-box">
                     <div class='form-group'>
-                        <label>Minute: </label>
-                        <div >
-                            <input id="alarm-minute"
-                                   class="alarm-input"
-                                   type="text"
-                                   placeholder="Insert minutes ...">
-                        </div>
+
                     </div>
                     </div>
                 </div>
@@ -79,14 +82,11 @@
             </fieldset>
         </form>
         </div>
-    </div>
-    <div class="controls">
-<!--        <button id='setAlarm' class="btn btn-primary set-alarm">Set Alarm</button>-->
-<!--        <button id="clearAlarm" class="btn btn-warning clear-alarm">Clear Alarm</button>-->
-        <button id="newAlarm" class="btn btn-info new-alarm">New Alarm</button>
+        <div class="alarm-input">
+            <button id="newAlarm" class="btn btn-info new-alarm">New Alarm</button>
+        </div>
     </div>
 </section>
-
     <section>
         <div id="new-alarm">
 
