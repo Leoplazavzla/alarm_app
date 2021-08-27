@@ -82,8 +82,9 @@ fieldset{
 
 .dateTime{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .new-alarm{
     margin-left: 2rem;
