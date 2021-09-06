@@ -61,13 +61,15 @@
                                  <span class="">Hour: </span><input id="alarm-hour"
                                        type="text"
                                        class="input-alarm"
-                                       onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;">
+                                       onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;"
+                                       maxlength="2">
                             </div>
                             <div class="alarm-input">
                                 <span>Minute: </span> <input id="alarm-minute"
                                        type="text"
                                        class="input-alarm"
-                                       onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;">
+                                       onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;"
+                                       maxlength="2">
                             </div>
                         </div>    
                     <div class="alarm-box">
