@@ -50,28 +50,26 @@
 </section>
 <section class="alarm-container mb-5">
 <div class="dateTime">
-        <div class="wrapper">
+        <div class="wrapper form-group form-inline">
         <form id="form" >
             <fieldset>
                 <div>
                     <div class="alarm-box">
-                        <div class='form-group form-inline'>
+                        <div class=''>
                             <h3 style="color: white">Set your alarm</h3>
-<!--                            <label>Hour</label>-->
                              <div class="alarm-input">
                                  <span class="">Hour: </span><input id="alarm-hour"
                                        type="text"
                                        class="input-alarm"
-                                       placeholder="Insert hour ... ">
+                                       onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;">
                             </div>
-<!--                            <label>Minute: </label>-->
                             <div class="alarm-input">
                                 <span>Minute: </span> <input id="alarm-minute"
                                        type="text"
-                                       placeholder="Insert minutes ..."
-                                       class="input-alarm">
+                                       class="input-alarm"
+                                       onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;">
                             </div>
-                        </div>
+                        </div>    
                     <div class="alarm-box">
                     <div class='form-group'>
 

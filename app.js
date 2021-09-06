@@ -95,14 +95,14 @@ class UI {
     addAlarm(alarm){
         const alarmList = document.getElementById('new-alarm');
         const alarmElement = document.createElement('div');
-        alarmElement.innerHTML = `<div class="container">
-            <div class="card text-center mb-5">
+        alarmElement.innerHTML = `<div class="container dp-flex">
+            <div class="card text-center">
             <div class="card-body">
-                <h2 class="card-title">The alarm was set for: </h2>
                 <strong>Hour: </strong>${alarm.hour}
                 <strong>Minute: </strong>${alarm.minute}
-                <a href="#" class="btn btn-danger" name="delete">Delete</a>
-            </div>
+                </div>
+                <div class="card">
+                <a href="#" class="btn btn-danger" name="delete">Delete</a></div>
         </div>
         </div>`;
         alarmList.appendChild(alarmElement);

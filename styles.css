@@ -29,6 +29,7 @@ h1{
 span{
     display: inline-block !important;
     color: aliceblue;
+    width: 60px;
 }
 
 
@@ -63,7 +64,7 @@ fieldset{
     display: flex;
     width: 100%;
     margin: 5px 0;
-    justify-content: right;
+    justify-content: left;
     padding: 0 9px;
     /*align-items: center;*/
 
@@ -72,10 +73,11 @@ fieldset{
 .input-alarm{
     justify-content: space-between;
     margin-left: 15px;
+    width: 50px;
 }
 
 .wrapper{
-    width: 292px;
+    width: 210px;
     border: solid white 2px;
     padding: 1.5rem 1rem 1rem 1rem;
 }
@@ -96,3 +98,10 @@ fieldset{
     justify-content: center;
 }
 
+.card{
+    flex-direction: row;
+    flex: 1;
+    padding: 0 25px;
+    align-items: baseline;
+    border: none;
+}
