@@ -1,5 +1,5 @@
 const display = document.getElementById('clock');
-const audio = new Audio("./alarm.mp3");
+const audio = new Audio("./Piano-quiet-loud-alarm.mp3");
 audio.loop = true;
 
 //Variables
