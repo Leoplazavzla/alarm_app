@@ -95,13 +95,13 @@ class UI {
     addAlarm(alarm){
         const alarmList = document.getElementById('new-alarm');
         const alarmElement = document.createElement('div');
-        alarmElement.innerHTML = `<div class="container dp-flex">
+        alarmElement.innerHTML = `<div class="container dp-flex mb-3">
             <div class="card text-center">
             <div class="card-body">
                 <strong>Hour: </strong>${alarm.hour}
                 <strong>Minute: </strong>${alarm.minute}
                 </div>
-                <div class="card">
+                <div class="card-body">
                 <a href="#" class="btn btn-danger" name="delete">Delete</a></div>
         </div>
         </div>`;
@@ -120,6 +120,11 @@ class UI {
             this.showMessage('Alarm Deleted', 'danger');
         }
     };
+
+    updateAlarm(){
+
+    }
+
     showMessage(message, cssClass){
     const alertDiv = document.createElement('div');
     alertDiv.className = `alert alert-${cssClass}`;

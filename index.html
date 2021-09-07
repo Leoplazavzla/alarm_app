@@ -27,10 +27,6 @@
                             <span class="visually-hidden">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/pomodoro">Pomodoro</a>
-                    </li>
-
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-sm-2"
@@ -43,7 +39,6 @@
         </div>
     </nav>
 </header>
-
 
 <section class="clock-container mb-2">
     <div id="clock" class="clock mt-5"></div>
@@ -71,7 +66,7 @@
                                        onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;"
                                        maxlength="2">
                             </div>
-                        </div>    
+                        </div>
                     <div class="alarm-box">
                     <div class='form-group'>
 
@@ -87,7 +82,7 @@
         </div>
     </div>
 </section>
-    <section>
+    <section class="alarm-section">
         <div id="new-alarm">
 
         </div>
